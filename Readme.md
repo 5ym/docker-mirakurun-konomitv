@@ -17,7 +17,7 @@ vim mirakurun/conf/channels.yml
 vim docker-compose.yml
 # konomitv自体の設定(こちらもそのままでも起動します)
 vim konomitv/config.yaml
-# 起動初期状態ではhttp://localhost:7000でアクセスできます
+# 起動(初期設定ではhttp://localhost:7000でアクセスできます)
 docker compose up -d
 ```
 
