@@ -1,8 +1,0 @@
-[2022/10/08 14:53:59] INFO:     Started server process [1]
-[2022/10/08 14:53:59] INFO:     Waiting for application startup.
-[2022/10/08 14:53:59] INFO:     Channels updating...
-[2022/10/08 14:53:59] INFO:     Channels update complete. (0.026 sec)
-[2022/10/08 14:54:00] INFO:     Programs updating...
-[2022/10/08 14:54:00] INFO:     Programs update complete. (0.01 sec)
-[2022/10/08 14:54:00] INFO:     Application startup complete.
-[2022/10/08 14:54:00] INFO:     Uvicorn running on http://127.0.0.77:7010 (Press CTRL+C to quit)

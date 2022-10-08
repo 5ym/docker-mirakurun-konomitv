@@ -2,6 +2,7 @@
 /mirakurun/data/*
 /mirakurun/conf/*
 /konomitv/config.yaml
+/konomitv/data/*
 /konomitv/data/account-icnos/*
 /konomitv/data/thumbnails/*
 /konomitv/logs/*
