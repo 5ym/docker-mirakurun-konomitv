@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  mirakurun:
+    image: chinachu/mirakurun
+    cap_add:
+      - SYS_ADMIN
+      - SYS_NICE
+    ports:
+      - "40772:40772"
+      - "9229:9229"
+    volumes:
+      - ./mirakurun/conf:/app-config
+      - ./mirakurun/data:/app-data
+    environment:
+      TZ: "Asia/Tokyo"
+    devices:
+      - /dev/bus:/dev/bus
+      - /dev/dvb:/dev/dvb
+    restart: always
+
+  konomitv:
+    image: ghcr.io/tsukumijima/konomitv
+    ports:
+      - '7000:7000'
+    volumes:
+      - ./konomitv/config.yaml:/code/config.yaml
+      - ./konomitv/data:/code/server/data
+      - ./konomitv/lgos:/code/server/logs
+      - ./konomitv/capture:/code/capture
+    restart: always
+    # QSVEncC / VCEEncC を動作させる (Intel Graphics / AMD GPU にアクセスする) ために必要な設定
+    # ホストマシン側のデバイスファイルをコンテナ側にマウントする
+    # devices:
+    #   - '/dev/dri:/dev/dri'
+    # NVEncC を動作させる (NVIDIA GPU にアクセスする) ために必要な設定
+    # NVEncC を動作させるには、別途 NVIDIA GPU ドライバと NVIDIA Container Toolkit (nvidia-docker2) のインストールが必要です。
+    # この設定を有効にすると、NVIDIA GPU が搭載されていない環境ではコンテナを起動できなくなります。
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           capabilities: [compute, utility, video]

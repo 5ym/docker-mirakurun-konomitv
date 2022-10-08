@@ -1,0 +1,10 @@
+/docker-compose.yml
+/mirakurun/data/*
+/mirakurun/conf/*
+/konomitv/config.yaml
+/konomitv/data/account-icnos/*
+/konomitv/data/thumbnails/*
+/konomitv/logs/*
+/konomitv/capture/*
+
+!.gitkeep
