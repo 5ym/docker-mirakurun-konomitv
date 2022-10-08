@@ -13,7 +13,7 @@ curl -sf https://raw.githubusercontent.com/5ym/docker-mirakurun-konomitv/main/se
 cd docker-mirakurun-konomitv
 # チャンネル設定
 vim mirakurun/conf/channels.yml
-# コメントアウトされている restart や user の設定を適宜変更する(そのままでも起動します)
+# 動作環境に応じて設定を適宜変更する(そのままでも起動します)
 vim docker-compose.yml
 # konomitv自体の設定(こちらもそのままでも起動します)
 vim konomitv/config.yaml
