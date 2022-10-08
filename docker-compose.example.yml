@@ -26,7 +26,7 @@ services:
       - ./konomitv/config.yaml:/code/config.yaml
       - ./konomitv/data:/code/server/data
       - ./konomitv/lgos:/code/server/logs
-      - ./konomitv/capture:/code/capture
+      - ./konomitv/capture:/host-rootfs/capture
     restart: always
     # QSVEncC / VCEEncC を動作させる (Intel Graphics / AMD GPU にアクセスする) ために必要な設定
     # ホストマシン側のデバイスファイルをコンテナ側にマウントする
