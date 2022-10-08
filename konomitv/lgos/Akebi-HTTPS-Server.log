@@ -1,2 +1,10 @@
 [2022/10/08 14:53:59] INFO:     Starting https reverse proxy server... 
 [2022/10/08 14:53:59] INFO:     Listening on 0.0.0.0:7000, Proxying http://127.0.0.77:7010/. 
+[2022/10/08 14:54:58] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:54:58] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:54:58] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:54:58] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:55:02] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:55:02] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:55:02] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 
+[2022/10/08 14:55:02] ERROR:    Fetching certificate: certificate is not valid for requested server name: x509: certificate is valid for *.local.konomi.tv, not localhost 

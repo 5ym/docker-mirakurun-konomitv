@@ -23,7 +23,7 @@
         # Intel Graphics 搭載の Intel CPU をお使いなら、QSVEncC が使えます。
         # Geforce などの NVIDIA GPU をお使いなら、NVEncC が使えます。
         # Radeon などの AMD GPU をお使いなら、VCEEncC が使えます。
-        'encoder': 'QSVEncC',
+        'encoder': 'FFmpeg',
 
         # 番組情報の更新間隔 (分)
         # 番組情報を EDCB または Mirakurun から取得する間隔を設定します。デフォルトは 15 (分) です。
