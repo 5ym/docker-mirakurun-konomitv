@@ -2,7 +2,7 @@
 
 ## 前提条件
 
-- Docker, docker-compose の導入が必須
+- Dockerの導入が必須
 - ホスト上の pcscd は停止する
 - チューナーのドライバが適切にインストールされていること(DVBドライバを想定しています。それ以外の場合は適宜tuners.ymlを編集してください)
 
@@ -14,7 +14,7 @@ cd docker-mirakurun-konomitv
 # チャンネル設定
 vim mirakurun/conf/channels.yml
 # 動作環境に応じて設定を適宜変更する(そのままでも起動します)
-vim docker-compose.yml
+vim compose.yml
 # konomitv自体の設定(こちらもそのままでも起動します)
 # 項目に関する説明は本家参照
 # https://github.com/tsukumijima/KonomiTV/blob/master/config.example.yaml
